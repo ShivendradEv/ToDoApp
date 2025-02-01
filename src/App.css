@@ -86,6 +86,10 @@ body {
   justify-content: flex-start;
 }
 
+.todos .todo-list .todo.completed {
+  background: #e7e7ff;
+}
+
 .todos .todo-list .todo:last-of-type {
   margin-bottom: 0;
 }
@@ -99,6 +103,10 @@ body {
   font-size: 16px;
   margin-left: 12px;
   color: #363636;
+}
+
+.todos .todo-list .todo.completed h2 {
+  text-decoration: line-through;
 }
 
 .todos .todo-list .todo button {
