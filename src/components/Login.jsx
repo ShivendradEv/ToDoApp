@@ -29,6 +29,7 @@ const Login = () => {
     return (
         <div className='container lg-container'>
             <form className='login' onSubmit={handleSubmit(onSubmit)}>
+                {error && <p style={{ color: "red", marginBottom: "20px" }}>{error}</p>}
                 <div className='login-head'>
                     <img src='/assets/login-icon.png' alt='login icon' />
                     <h1>Login</h1>
@@ -43,7 +44,6 @@ const Login = () => {
                 </div>
                 <input type="submit" value="Login" />
                 <p>Not an existing user <NavLink to="/signup">Register</NavLink></p>
-                {error && <p>{error}</p>}
             </form>
         </div>
     )
